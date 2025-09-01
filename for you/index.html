@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTS x My Love 💜</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0b0f1a;
+      --card: #151a2f;
+      --text: #f0eaff;
+      --muted: #c3b8ff;
+      --accent: #9b5dff;
+      --accent-2: #ff7ac8;
+      --glow: 0 0 15px rgba(155,93,255,.5), 0 0 45px rgba(255,122,200,.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, rgba(155,93,255,.2), transparent),
+                  var(--bg);
+      color: var(--text);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+    h1.title {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(36px, 7vw, 74px);
+      margin: 20px 0 10px;
+      text-align: center;
+      text-shadow: var(--glow);
+    }
+    .subtitle { text-align: center; color: var(--muted); max-width: 720px; margin: 0 auto 26px; }
+    .section {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 22px;
+      border-radius: 20px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: 0 6px 30px rgba(0,0,0,.25);
+    }
+    .section h2 {
+      margin-top: 0;
+      color: var(--accent-2);
+      text-shadow: var(--glow);
+    }
+    /* Timeline */
+    .timeline { position: relative; padding-left: 24px; }
+    .timeline::before {
+      content:""; position:absolute; left:10px; top:0; bottom:0;
+      width:2px; background:linear-gradient(var(--accent), var(--accent-2));
+      box-shadow: var(--glow);
+    }
+    .t-item {
+      margin: 14px 0; padding: 12px 14px;
+      background: rgba(255,255,255,.04);
+      border-radius: 12px;
+      border: 1px dashed rgba(255,255,255,.1);
+      position: relative;
+    }
+    .t-item::before {
+      content:""; position:absolute; left:-8px; top:16px;
+      width:12px; height:12px; border-radius:50%;
+      background:linear-gradient(var(--accent),var(--accent-2));
+      box-shadow: var(--glow);
+    }
+    /* BTS Member Grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .member {
+      background: var(--card);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(255,255,255,.08);
+      box-shadow: var(--glow);
+      text-align: center;
+      padding: 12px;
+      transition: transform .3s ease;
+    }
+    .member:hover { transform: scale(1.05); }
+    .member img {
+      width: 100%; height: 220px; object-fit: cover;
+      border-radius: 12px;
+    }
+    .member p { margin: 10px 0 0; font-size: 14px; color: var(--muted); }
+    /* Buttons */
+    .btn {
+      cursor:pointer; border:0; padding:12px 18px; border-radius:14px;
+      font-weight:600; color:#fff;
+      background:linear-gradient(135deg,var(--accent),var(--accent-2));
+      box-shadow: var(--glow);
+      margin:6px;
+      transition: transform .15s ease;
+    }
+    .btn:hover { transform: scale(1.05); }
+    /* Floating emojis */
+    .floaty { position:fixed; bottom:-20px; pointer-events:none;
+              animation: rise 3.4s ease-in forwards; }
+    @keyframes rise { to { transform: translateY(-160vh) scale(1.2); opacity:0 } }
+    footer { text-align:center; color:var(--muted); padding:30px 10px; }
+    /* Modal */
+    .modal-backdrop {
+      position:fixed; inset:0; background:rgba(0,0,0,.65);
+      display:none; align-items:center; justify-content:center;
+      z-index:50;
+    }
+    .modal {
+      width:min(720px,92vw); background:var(--card);
+      border-radius:22px; padding:20px;
+      border:1px solid rgba(255,255,255,.1);
+      box-shadow:0 20px 60px rgba(0,0,0,.6);
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">💜 For My BTS Girl 💜</h1>
+  <p class="subtitle">This is your safe space. Just like BTS reminds us — you never walk alone. I’m always here with you. 🌙</p>
+
+  <!-- Timeline -->
+  <section class="section">
+    <h2>Our Love Story Timeline</h2>
+    <div class="timeline">
+      <div class="t-item"><b>Chapter 1 – Friendship</b> → We started talking like it was nothing… and suddenly it was everything. 🌱</div>
+      <div class="t-item"><b>Chapter 2 – Feelings</b> → Long chats, shy smiles, little butterflies. 💕</div>
+      <div class="t-item"><b>Chapter 3 – Acceptance</b> → We said it. The world bloomed. 🌷</div>
+      <div class="t-item"><b>Chapter 4 – Milestones</b> → Little wins, endless support, goofy chaos. 🥂</div>
+      <div class="t-item"><b>Chapter 5 – Till Now</b> → Hand in hand, mood swings, belly laughs. Forever ours. 🤝</div>
+    </div>
+  </section>
+
+  <!-- Promise -->
+  <section class="section">
+    <h2>My Promise 💍</h2>
+    <p>I’ll be your soft place to land on hard days, your calm during overthinking, and your teammate in every silly chaos. You are never alone — we’ll always glow together. ✨</p>
+  </section>
+
+  <!-- BTS Members -->
+  <section class="section">
+    <h2>BTS Wisdom for You 💜</h2>
+    <div class="grid">
+      <div class="member">
+        <img src="RM1.jpg" alt="RM">
+        <p>“No one is born ugly, we’re just born in a judgmental society.” – RM</p>
+      </div>
+      <div class="member">
+        <img src="Jin.jpg" alt="Jin">
+        <p>“Your presence can give happiness. I hope you remember that.” – Jin</p>
+      </div>
+      <div class="member">
+        <img src="Suga.jpg" alt="Suga">
+        <p>“Effort will not betray you.” – Suga</p>
+      </div>
+      <div class="member">
+        <img src="j-hope.jpg" alt="J-Hope">
+        <p>“I’m your hope, you’re my hope, I’m J-Hope.” – J-Hope</p>
+      </div>
+      <div class="member">
+        <img src="jimin.jpg" alt="Jimin">
+        <p>“Go on your path, even if you live for a day.” – Jimin</p>
+      </div>
+      <div class="member">
+        <img src="V.jpg" alt="V">
+        <p>“Don’t be trapped in someone else’s dream.” – V</p>
+      </div>
+      <div class="member">
+        <img src="JK.jpg" alt="Jungkook">
+        <p>“Effort makes you. You will regret someday if you don’t do your best now.” – Jungkook</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Surprise + Letter -->
+  <section class="section">
+    <h2>Little Surprise 🎁</h2>
+    <button class="btn" id="surpriseBtn">Open Surprise</button>
+    <p id="surpriseText" style="color:var(--muted);margin-top:10px"></p>
+
+    <button class="btn" id="letterBtn">Open Love Letter 💌</button>
+  </section>
+
+  <!-- Audio -->
+  <section class="section">
+    <h2>A Soft Tune 🎧</h2>
+    <audio id="softAudio" controls preload="none">
+      <source src="audio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+  <!-- Modal Love Letter -->
+  <div class="modal-backdrop" id="letterModal">
+    <div class="modal">
+      <h3>A Love Letter For My Girl 💌</h3>
+      <p>Hey my sunshine,</p>
+      <p>I know exams feel heavy, but remember even BTS failed before they shined. 
+        You are stronger than your fears. No grade, no ATKT can measure your worth.
+         You are my brightest star, and together we’ll pass every test 
+         of college, of life, of love. 💜</p>
+      <p>Always with you,<br> Your Bubby 🫶</p>
+      <button class="btn" id="closeLetter">Close</button>
+    </div>
+  </div>
+
+  <footer>Made with endless purple love 💜</footer>
+
+  <script>
+    const surpriseBtn = document.getElementById('surpriseBtn');
+    const surpriseText = document.getElementById('surpriseText');
+    const letterBtn = document.getElementById('letterBtn');
+    const closeLetter = document.getElementById('closeLetter');
+    const letterModal = document.getElementById('letterModal');
+
+    const surprises = [
+      "Plot twist: you’re even cuter when you’re stressed. 🥺💜",
+      "Breaking news: your smile is my national treasure. ✨",
+      "Certified fact: exams fear you, not the other way around. 😎",
+      "Reminder: I’m bringing snacks, hugs & BTS playlist. 🎶🍫",
+      "If effort is purple, then you’re a whole galaxy. 🌌💜"
+    ];
+
+    function celebrate(n = 15) {
+      for (let i = 0; i < n; i++) {
+        const el = document.createElement('div');
+        el.className = 'floaty';
+        el.textContent = ['💜','✨','💖','🌸','🫶'][Math.floor(Math.random()*5)];
+        el.style.left = Math.random()*100 + 'vw';
+        el.style.fontSize = (16 + Math.random()*18) + 'px';
+        document.body.appendChild(el);
+        setTimeout(()=>el.remove(), 3500);
+      }
+    }
+
+    surpriseBtn.addEventListener('click', () => {
+      const msg = surprises[Math.floor(Math.random()*surprises.length)];
+      surpriseText.textContent = msg;
+      celebrate(12);
+    });
+
+    letterBtn.addEventListener('click', () => {
+      letterModal.style.display = 'flex';
+      celebrate(20);
+    });
+
+    closeLetter.addEventListener('click', () => {
+      letterModal.style.display = 'none';
+    });
+
+    letterModal.addEventListener('click', (e) => {
+      if(e.target === letterModal) letterModal.style.display = 'none';
+    });
+  </script>
+</body>
+</html>
